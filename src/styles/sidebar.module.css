@@ -14,6 +14,9 @@
      text-decoration: none;
 }
 .sidebar_fullScreen{
+     position: sticky;
+     top: 0;
+     left: 0;
      height:100vh;
      width: 20%;
      display: flex;
@@ -37,6 +40,8 @@
 .showMenuBurger{
      padding: 1rem 0 0 2rem;
 }
+
+
 
 
 

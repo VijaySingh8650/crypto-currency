@@ -13,6 +13,32 @@
     font-size: 1rem;
 }
 
+.crypto_container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 2rem;
+}
+
+.crypto_container_card{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: .5rem;
+    padding: 2rem;
+}
+
+.crypto_container_card > h1{
+    font-size: 1.2rem;
+}
+.crypto_container_card > h3{
+    color: #6558f5;
+}
+
+.section_title{
+    font-size: 1.3rem;
+    margin: 2rem 0 1rem 0;
+}
+
 @media (max-width:800px) {
     
     .pageTitle{

@@ -1,0 +1,107 @@
+
+.active{
+  color: #6558f5;
+  font-size: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+.pending{
+     
+     color: #000000;
+     font-size: 1rem;
+     display: flex;
+     gap: 1rem;
+     text-decoration: none;
+}
+.sidebar_fullScreen{
+     height:100vh;
+     width: 20%;
+     display: flex;
+     gap: 1rem;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+     padding: 1rem;
+     box-sizing: border-box;
+     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.sidebar_smallScreen{
+     display: none;
+}
+
+.sidebar_floatingScreen{
+     display: none;
+}
+
+.showMenuBurger{
+     padding: 1rem 0 0 2rem;
+}
+
+
+
+@media  (max-width:800px) {
+     .sidebar_fullScreen{
+          display: none;
+     } 
+     .sidebar_smallScreen{
+          display: block;
+     }
+
+     .showMenuBurger{
+          position: relative;
+          width: 100%;
+     }
+     .showMenuBurger > .closeIcon{
+          position: absolute;
+          top: 0rem;
+          right: 2rem;
+     }
+
+     .sidebar_floatingScreen{
+          transform: translateX(-100%);
+          animation: slidingMenu .5s linear  forwards ;
+          position: absolute;
+          top: 0;
+          left: 0;
+          height:100vh;
+          width: 20%;
+          display: flex;
+          gap: 1rem;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          padding: 1rem;
+          box-sizing: border-box;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+          background-color: white;
+     }
+
+     .active, .pending{  
+          font-size: .85rem;
+          gap: .5rem;
+     }
+}
+
+@media  (max-width:500px){
+     .active, .pending{  
+          font-size: 1rem;
+     }
+     .navbar_name{
+          display: none;
+     }
+}
+
+@keyframes slidingMenu {
+
+     0%{
+          transform: translateX(-100%);  
+     }
+
+     100%{
+          
+          transform: translateX(0%);  
+     }
+     
+}
+

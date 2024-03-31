@@ -1,0 +1,17 @@
+.aboutUsContainer{
+
+    width: 100%;
+    padding: 2rem;
+
+}
+.pageTitle{
+    text-align: center;
+    color: #6558f5;
+}
+
+@media (max-width:800px) {
+    
+    .pageTitle{
+        font-size: 1.5rem;
+    }
+}
